@@ -6,7 +6,13 @@ class Colorboxes extends Component{
         const {name,background} = this.props;
         return(
             <div style={{background}} className="boxes">   
-                <h1>{name}</h1>
+                <div className="copy-container">
+                     <div className="box-content">
+                        <span>{name}</span>
+                     </div>
+                     <button className="copy-btn">copy</button>
+                </div>
+                <span className="see-more">More</span>
             </div>
         )
     }
